@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FeedTheCat</string>
+    <string name="count">War crimes: %d</string>
+    <string name="feed_btn">Feed</string>
+</resources>

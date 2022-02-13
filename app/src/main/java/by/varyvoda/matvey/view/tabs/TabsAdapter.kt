@@ -1,23 +1,25 @@
 package by.varyvoda.matvey.view.tabs
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import by.varyvoda.matvey.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import by.varyvoda.matvey.view.fragment.About
+import by.varyvoda.matvey.view.fragment.Floppa
 
-class PagerVH(itemView: View) : RecyclerView.ViewHolder(itemView)
+class TabsAdapter(fm: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(fm, lifecycle) {
 
-class TabsAdapter : RecyclerView.Adapter<PagerVH>() {
+    val labels = listOf("Floppa", "About")
 
-    public val labels = listOf("Floppa", "About")
+    override fun createFragment(position: Int): Fragment {
+        return when (position) {
+            0 -> Floppa()
+            1 -> About()
+            else -> throw IllegalArgumentException()
+        }
+    }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerVH =
-        PagerVH(LayoutInflater.from(parent.context)
-            .inflate(R.layout.floppa, parent, false))
-
-    override fun getItemCount(): Int = labels.size
-
-    override fun onBindViewHolder(holder: PagerVH, position: Int) = holder.itemView.run {
+    override fun getItemCount(): Int {
+        return labels.size
     }
 }

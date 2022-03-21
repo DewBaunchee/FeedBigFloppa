@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401005278987",
+    "project_id": "feedthecat-a5edf",
+    "storage_bucket": "feedthecat-a5edf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401005278987:android:3f5c5068491705b83b940e",
+        "android_client_info": {
+          "package_name": "by.varyvoda.matvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "by.varyvoda.matvey",
+            "certificate_hash": "7a0a668e3c68604e0d206875eed46108eeaf46dd"
+          }
+        },
+        {
+          "client_id": "",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

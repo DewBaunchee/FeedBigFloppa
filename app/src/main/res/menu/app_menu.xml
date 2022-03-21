@@ -4,4 +4,8 @@
         android:id="@+id/infoButton"
         android:icon="@android:drawable/ic_menu_info_details"
         android:title="@string/info" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/logout" />
 </menu>
